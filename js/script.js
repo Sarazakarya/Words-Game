@@ -74,6 +74,10 @@ function getRoundomWord() {
 
     }
     inputContainers.innerHTML = inp;
+
+       setTimeout(() => {
+        typing.focus();
+    }, 100);
 }
 
 getRoundomWord()

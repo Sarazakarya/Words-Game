@@ -52,7 +52,7 @@ const words = [
 document.addEventListener("keydown", () => typing.focus());
 resetBtn.addEventListener("click", getRoundomWord)
 typing.addEventListener("input", startGame)
-typing.addEventListener("input", startGame)
+typing.addEventListener("focus", () => typing.focus());
 
 function getRoundomWord() {
     reset()
